@@ -4,8 +4,7 @@ apply plugin: 'com.jfrog.bintray'
 def siteUrl = 'https://github.com/myjoybar/AndroidJsonToNative'
 def gitUrl = 'https://github.com/myjoybar/AndroidJsonToNative.git'
 group = "com.joy.jsontonative"
-version = "1.0.0"
-
+version = "1.0.1"
 install {
     repositories.mavenInstaller {
         // This generates POM.xml with proper parameters
@@ -70,7 +69,7 @@ bintray {
     configurations = ['archives']
     pkg {
         repo = "Andorid-Maven"
-        name = "XLog"
+        name = "jsontonative"
         websiteUrl = siteUrl
         vcsUrl = gitUrl
         licenses = ["Apache-2.0"]

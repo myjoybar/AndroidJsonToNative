@@ -1,9 +1,16 @@
-##DynamicJsonToNative
+# AndroidJsonToNative
+Create android native view with  just a single JSON
+
 
 #### 1. 描述 
 通过配置Json，翻译为Android Natvie原生控件
 
 #### 2. Installing
+
+```
+
+compile 'com.joy.jsontonative:library:1.0.1'
+```
 
 #### 3. 当前支持的View or ViewGroup
 1. TextView

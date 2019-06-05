@@ -1,5 +1,4 @@
-# AndroidJsonToNative
-Create android native view with  just a single JSON
+##DynamicJsonToNative
 
 #### 1. 描述 
 通过配置Json，翻译为Android Natvie原生控件
@@ -427,7 +426,7 @@ ButtonViewAttr集成了TextViewAttr，支持以上TextView所有属性
 
 1. 使用json示例详见demo
 
-![image](https://github.com/myjoybar/AndroidJsonToNative/blob/master/screenshots/scrollView.png) 
+![image](https://github.com/myjoybar/AndroidJsonToNative/blob/master/screenshots/ScrollView.png) 
 
 
 ##### 9. HorizontalScrollView
@@ -437,7 +436,7 @@ ButtonViewAttr集成了TextViewAttr，支持以上TextView所有属性
 
 1.使用json示例详见demo
 
-![image](https://github.com/myjoybar/AndroidJsonToNative/blob/master/screenshots/horizontalScrollView.png) 
+![image](https://github.com/myjoybar/AndroidJsonToNative/blob/master/screenshots/HorizontalScrollView.png) 
 
 
 ##### 10. 自定义扩展
@@ -454,6 +453,5 @@ IPlugin中预留了和业务交互的方法
 ```
 
 通过调用 PluginInjector.getInstance().register(new PluginImpl(this))注册即可
-
 
 

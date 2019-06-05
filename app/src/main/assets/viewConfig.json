@@ -1,0 +1,648 @@
+{
+  "name": "android.widget.ScrollView",
+  "attr": {
+    "showScrollbar": "true",
+    "width": "match",
+    "height": "match"
+  },
+  "children": [{
+    "name": "android.widget.LinearLayout",
+    "attr": {
+      "orientation": "vertical",
+      "width": "match",
+      "height": "match"
+    },
+    "children": [{
+      "name": "android.widget.TextView",
+      "attr": {
+        "width": "match",
+        "height": "50dp",
+        "text": "1. HorizontalScrollView 使用示例",
+        "layoutGravity": "left",
+        "gravity": "center",
+        "backgroundColor": "#FAF0E6"
+      }
+    }, {
+      "name": "android.widget.HorizontalScrollView",
+      "attr": {
+        "showScrollbar": "true",
+        "width": "match",
+        "height": "50dp"
+      },
+      "children": [{
+        "name": "android.widget.LinearLayout",
+        "attr": {
+          "orientation": "horizontal",
+          "width": "match",
+          "height": "match"
+        },
+        "children": [{
+          "name": "android.widget.TextView",
+          "attr": {
+            "visibility": "visible",
+            "width": "200dp",
+            "height": "50dp",
+            "backgroundColor": "#EEE8AA",
+            "text": "Hello",
+            "gravity": "center"
+          }
+        }, {
+          "name": "android.widget.TextView",
+          "attr": {
+            "width": "200dp",
+            "height": "50dp",
+            "backgroundColor": "#EEDFCC",
+            "text": "Welcome",
+            "gravity": "center"
+          }
+        }, {
+          "name": "android.widget.TextView",
+          "attr": {
+            "width": "200dp",
+            "height": "50dp",
+            "backgroundColor": "#EED5B7",
+            "text": "to",
+            "gravity": "center"
+          }
+        }, {
+          "name": "android.widget.TextView",
+          "attr": {
+            "width": "200dp",
+            "height": "50dp",
+            "backgroundColor": "#EEC900",
+            "text": "Hangzhou",
+            "gravity": "center"
+          }
+        }, {
+          "name": "android.widget.TextView",
+          "attr": {
+            "width": "200dp",
+            "height": "50dp",
+            "backgroundColor": "#EEAEEE",
+            "text": "China",
+            "gravity": "center"
+          }
+        }]
+      }]
+
+
+    }, {
+      "name": "android.widget.TextView",
+      "attr": {
+        "width": "match",
+        "height": "50dp",
+        "text": "2. FrameLayout 使用示例",
+        "layoutGravity": "left",
+        "gravity": "center",
+        "backgroundColor": "#FAF0E6"
+      }
+    }, {
+      "name": "android.widget.FrameLayout",
+      "attr": {
+        "width": "match",
+        "height": "150dp",
+        "backgroundColor": "#CCCCCC"
+      },
+      "children": [{
+        "name": "android.widget.TextView",
+        "attr": {
+          "visibility": "visible",
+          "width": "50dp",
+          "height": "50dp",
+          "backgroundColor": "#EEC591",
+          "text": "top_left",
+          "layoutGravity": "top_left"
+        }
+      }, {
+        "name": "android.widget.TextView",
+        "attr": {
+          "visibility": "visible",
+          "width": "wrap",
+          "height": "50dp",
+          "backgroundColor": "#EEC591",
+          "text": "bottom_left",
+          "gravity": "center",
+          "layoutGravity": "bottom_left"
+        }
+      }, {
+        "name": "android.widget.TextView",
+        "attr": {
+          "visibility": "visible",
+          "width": "50dp",
+          "height": "50dp",
+          "backgroundColor": "#EEC591",
+          "text": "top_right",
+          "layoutGravity": "top_right"
+        }
+      }, {
+        "name": "android.widget.TextView",
+        "attr": {
+          "visibility": "visible",
+          "width": "50dp",
+          "height": "50dp",
+          "backgroundColor": "#EEC591",
+          "text": "bottom_right",
+          "gravity": "center",
+          "layoutGravity": "bottom_right"
+        }
+      }, {
+        "name": "android.widget.TextView",
+        "attr": {
+          "visibility": "visible",
+          "width": "50dp",
+          "height": "50dp",
+          "backgroundColor": "#EEC591",
+          "text": "center",
+          "gravity": "center",
+          "layoutGravity": "center"
+        }
+      }]
+    }, {
+      "name": "android.widget.TextView",
+      "attr": {
+        "width": "match",
+        "height": "50dp",
+        "text": "3. padding和margin",
+        "layoutGravity": "center_horizontal",
+        "gravity": "center",
+        "backgroundColor": "#FAF0E6"
+      }
+    }, {
+      "name": "android.widget.LinearLayout",
+      "attr": {
+        "visibility": "visible",
+        "orientation": "horizontal",
+        "backgroundColor": "#EEE9E9",
+        "width": "match",
+        "height": "100dp",
+        "paddingLeft": "10dp",
+        "paddingTop": "10dp",
+        "paddingRight": "10dp",
+        "paddingBottom": "10dp"
+      },
+      "children": [{
+        "name": "android.widget.TextView",
+        "attr": {
+          "width": "wrap",
+          "height": "match",
+          "text": "padding=10,marginLeft=20",
+          "paddingLeft": "10dp",
+          "paddingTop": "10dp",
+          "paddingRight": "10dp",
+          "paddingBottom": "10dp",
+          "marginLeft": "20dp",
+          "layoutGravity": "center_horizontal",
+          "gravity": "center",
+          "backgroundColor": "#EEE685"
+        }
+      }]
+    }, {
+      "name": "android.widget.TextView",
+      "attr": {
+        "width": "match",
+        "height": "50dp",
+        "text": "4. LinearLayout weight属性",
+        "layoutGravity": "left",
+        "gravity": "center",
+        "backgroundColor": "#FAF0E6"
+      }
+    }, {
+      "name": "android.widget.LinearLayout",
+      "attr": {
+        "orientation": "horizontal",
+        "backgroundColor": "#EEE8AA",
+        "width": "match",
+        "height": "100dp"
+      },
+      "children": [{
+        "name": "android.widget.TextView",
+        "attr": {
+          "width": "wrap",
+          "height": "match",
+          "text": "weight=1",
+          "layoutWeight": "1",
+          "gravity": "center",
+          "backgroundColor": "#EEDC82"
+        }
+      }, {
+        "name": "android.widget.TextView",
+        "attr": {
+          "width": "wrap",
+          "height": "match",
+          "text": "weight=1",
+          "layoutWeight": "1",
+          "gravity": "center",
+          "backgroundColor": "#EED2EE"
+        }
+      }, {
+        "name": "android.widget.TextView",
+        "attr": {
+          "width": "wrap",
+          "height": "match",
+          "text": "weight=1",
+          "layoutWeight": "1",
+          "gravity": "center",
+          "backgroundColor": "#FAEBD7"
+        }
+      }]
+    }, {
+      "name": "android.widget.LinearLayout",
+      "attr": {
+        "orientation": "horizontal",
+        "backgroundColor": "#EEE8AA",
+        "width": "match",
+        "height": "100dp",
+        "marginTop": "10dp"
+      },
+      "children": [{
+        "name": "android.widget.TextView",
+        "attr": {
+          "width": "wrap",
+          "height": "match",
+          "text": "wrap1",
+          "gravity": "center",
+          "backgroundColor": "#EEDC82"
+        }
+      }, {
+        "name": "android.widget.TextView",
+        "attr": {
+          "width": "wrap",
+          "height": "match",
+          "text": "wrap2",
+          "gravity": "center",
+          "backgroundColor": "#EED2EE"
+        }
+      }, {
+        "name": "android.widget.TextView",
+        "attr": {
+          "width": "wrap",
+          "height": "match",
+          "text": "weight=1",
+          "layoutWeight": "1",
+          "gravity": "center",
+          "backgroundColor": "#FAEBD7"
+        }
+      }]
+    }, {
+      "name": "android.widget.TextView",
+      "attr": {
+        "width": "match",
+        "height": "50dp",
+        "text": "5. RelativeLayout 使用示例",
+        "layoutGravity": "left",
+        "gravity": "center",
+        "backgroundColor": "#FAF0E6"
+      }
+    }, {
+      "name": "android.widget.RelativeLayout",
+      "attr": {
+        "width": "match",
+        "height": "400dp",
+        "backgroundColor": "#CCCCCC"
+      },
+      "children": [{
+        "name": "android.widget.TextView",
+        "attr": {
+          "id": 1001,
+          "width": "100dp",
+          "height": "100dp",
+          "backgroundColor": "#EE6A50",
+          "alignParentLeft": true,
+          "alignParentTop": true,
+          "text": "alignParentTop&alignParentLeft=true,selfid=1001"
+
+        }
+      }, {
+        "name": "android.widget.TextView",
+        "attr": {
+          "id": 1002,
+          "width": "100dp",
+          "height": "100dp",
+          "backgroundColor": "#EEC591",
+          "alignParentTop": true,
+          "alignParentRight": true,
+          "text": "alignParentTop&alignParentRight=true,self id =1002",
+          "gravity": "center"
+        }
+      }, {
+        "name": "android.widget.TextView",
+        "attr": {
+          "id": 1003,
+          "width": "100dp",
+          "height": "100dp",
+          "backgroundColor": "#EEC591",
+          "alignParentBottom": true,
+          "text": "alignParentBottom=true,self id =1003",
+          "gravity": "center"
+        }
+      }, {
+        "name": "android.widget.TextView",
+        "attr": {
+          "id": 1004,
+          "width": "100dp",
+          "height": "100dp",
+          "backgroundColor": "#EEC591",
+          "alignParentBottom": true,
+          "alignParentRight": true,
+          "text": "alignParentBottom&alignParentRight=true,self id =1004",
+          "gravity": "center"
+        }
+      }, {
+        "name": "android.widget.TextView",
+        "attr": {
+          "id": 1005,
+          "width": "100dp",
+          "height": "100dp",
+          "backgroundColor": "#EEC591",
+          "centerVertical": true,
+          "text": "centerVertical=true,self id =1005",
+          "gravity": "center"
+        }
+      }, {
+        "name": "android.widget.TextView",
+        "attr": {
+          "id": 1006,
+          "width": "100dp",
+          "height": "100dp",
+          "backgroundColor": "#E066FF",
+          "toRightOfID": "1005",
+          "belowID": "1001",
+          "text": "toRightOfID=1005,belowID=1001,self id =1006",
+          "gravity": "center"
+        }
+      },{
+        "name": "android.widget.TextView",
+        "attr": {
+          "id": 1007,
+          "width": "100dp",
+          "height": "100dp",
+          "backgroundColor": "#EEC591",
+          "centerInParent": true,
+          "text": "centerInParent=true,self id =1007",
+          "gravity": "center"
+        }
+      },{
+        "name": "android.widget.TextView",
+        "attr": {
+          "id": 1008,
+          "width": "100dp",
+          "height": "100dp",
+          "backgroundColor": "#EEC591",
+          "alignParentBottom": true,
+          "centerHorizontal": true,
+          "text": "alignParentBottom=true,centerHorizontal=true,self id =1008",
+          "gravity": "center"
+        }
+      }  ]
+    }, {
+      "name": "android.widget.TextView",
+      "attr": {
+        "width": "match",
+        "height": "50dp",
+        "text": "6. Imageview 使用",
+        "layoutGravity": "center_horizontal",
+        "gravity": "center",
+        "backgroundColor": "#FAF0E6"
+      }
+    }, {
+      "name": "android.widget.LinearLayout",
+      "attr": {
+        "visibility": "visible",
+        "orientation": "vertical",
+        "backgroundColor": "#EEE9E9",
+        "gravity": "center_horizontal",
+        "width": "match",
+        "height": "wrap"
+      },
+      "children": [{
+        "name": "android.widget.ImageView",
+        "attr": {
+          "src": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559650317195&di=442894579f9977ab82aadf1796b02ef1&imgtype=0&src=http%3A%2F%2Fimages.warchina.com%2Fsrc%2F201609%2F4105bc8117.jpg",
+          "scaleType": "centerInside",
+          "width": "200dp",
+          "height": "200dp",
+          "gravity": "center"
+        }
+
+      }, {
+        "name": "android.widget.ImageView",
+        "attr": {
+          "src": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1560244992&di=eac196c60bcd20176ef13968acbbafdd&imgtype=jpg&er=1&src=http%3A%2F%2Fi1.hdslb.com%2Fbfs%2Farchive%2F3894ddedd7c91e2412c24aa01dc98d22897e45e8.jpg",
+          "scaleType": "centerInside",
+          "width": "200dp",
+          "height": "200dp",
+          "gravity": "center"
+        }
+
+      }, {
+        "name": "android.widget.ImageView",
+        "attr": {
+          "src": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559651240905&di=7809034e116d9b0be9ca8f3c48b30b9f&imgtype=0&src=http%3A%2F%2Fcartoon.zwbk.org%2FImageUploadTK%2F6346837811022550009116291302.jpg",
+          "scaleType": "centerInside",
+          "width": "wrap",
+          "height": "wrap",
+          "gravity": "center"
+        }
+
+      }, {
+        "name": "android.view.View",
+        "attr": {
+          "background": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559651240905&di=7809034e116d9b0be9ca8f3c48b30b9f&imgtype=0&src=http%3A%2F%2Fcartoon.zwbk.org%2FImageUploadTK%2F6346837811022550009116291302.jpg",
+          "scaleType": "centerInside",
+          "width": "100dp",
+          "height": "100dp",
+          "marginBottom": "10dp"
+
+        }
+
+      }]
+    }, {
+      "name": "android.widget.TextView",
+      "attr": {
+        "width": "200dp",
+        "height": "50dp",
+        "marginTop": "10dp",
+        "marginBottom": "10dp",
+        "text": "7. Shape RECTANGLE 圆角无渐变有边框",
+        "layoutGravity": "center_horizontal",
+        "gravity": "center",
+        "solidShapeAttr": {
+          "shape": "rectangle",
+          "strokeColor": "#EEC900",
+          "strokeWidth": "1dp",
+          "radius": ["30dp", "30dp", "30dp", "30dp"],
+          "solidColor": "#FAEBD7"
+        }
+      }
+    }, {
+      "name": "android.widget.TextView",
+      "attr": {
+        "width": "60dp",
+        "height": "60dp",
+        "marginTop": "10dp",
+        "marginBottom": "10dp",
+        "text": "8",
+        "layoutGravity": "center_horizontal",
+        "gravity": "center",
+        "solidShapeAttr": {
+          "shape": "oval",
+          "strokeColor": "#EEC900",
+          "strokeWidth": "1dp",
+          "solidColor": "#FAEBD7"
+        }
+      }
+    }, {
+      "name": "android.widget.TextView",
+      "attr": {
+        "width": "200dp",
+        "height": "50dp",
+        "marginTop": "10dp",
+        "marginBottom": "10dp",
+        "text": "9. 渐变Shape",
+        "layoutGravity": "center_horizontal",
+        "gravity": "center",
+        "gradientShapeAttr": {
+          "shape": "rectangle",
+          "strokeColor": "#EEC900",
+          "strokeWidth": "1dp",
+          "radius": ["30dp", "30dp", "30dp", "30dp"],
+          "colors": ["#F0FFFF", "#EEEEE0", "#EE5C42"],
+          "gradientType": "linear",
+          "orientation": "top_bottom"
+        }
+      }
+    }, {
+      "name": "android.widget.TextView",
+      "attr": {
+        "width": "200dp",
+        "height": "50dp",
+        "marginTop": "10dp",
+        "marginBottom": "10dp",
+        "text": "10. lector 点击我看效果",
+        "layoutGravity": "center_horizontal",
+        "gravity": "center",
+        "click": {
+          "actionType": "1",
+          "args": ["Hello Seal"]
+        },
+        "solidSelectorAttr": {
+          "shape": "rectangle",
+          "strokeColor": "#EEC900",
+          "strokeWidth": "1dp",
+          "radius": ["30dp", "30dp", "30dp", "30dp"],
+          "colorNormal": "#EED2EE",
+          "colorPressed": "#EE3B3B"
+        }
+      }
+    }, {
+      "name": "android.widget.Button",
+      "attr": {
+        "width": "200dp",
+        "height": "50dp",
+        "marginTop": "10dp",
+        "marginBottom": "10dp",
+        "text": "11. sector 渐变 点击我看效果",
+        "layoutGravity": "center_horizontal",
+        "gravity": "center",
+        "click": {
+          "actionType": "2",
+          "args": ["Title", "I am remote mesage"]
+        },
+        "gradientSelectorAttr": {
+          "shape": "rectangle",
+          "strokeColor": "#EEC900",
+          "strokeWidth": "1dp",
+          "radius": ["30dp", "30dp", "30dp", "30dp"],
+          "colorsNormal": ["#EE6363", "#EE3A8C", "#EE00EE"],
+          "colorsPressed": ["#EED5B7", "#EEC900", "#EEAEEE"],
+          "gradientType": "linear",
+          "orientation": "top_bottom"
+        }
+      }
+    }, {
+      "name": "android.widget.TextView",
+      "attr": {
+        "width": "match",
+        "height": "50dp",
+        "text": "6. selector 圆角无渐变",
+        "layoutGravity": "center_horizontal",
+        "gravity": "center",
+        "backgroundColor": "#FAF0E6"
+      }
+    }, {
+      "name": "android.widget.LinearLayout",
+      "attr": {
+        "visibility": "visible",
+        "orientation": "horizontal",
+        "backgroundColor": "#FF0000",
+        "width": "match",
+        "height": "100dp",
+        "paddingLeft": "10dp",
+        "paddingTop": "10dp",
+        "paddingRight": "10dp",
+        "paddingBottom": "10dp"
+      },
+      "children": [{
+        "name": "android.widget.TextView",
+        "attr": {
+          "visibility": "visible",
+          "width": "50dp",
+          "height": "50dp",
+          "backgroundColor": "#FF1493",
+          "text": "我是TextView",
+          "gravity": "center"
+        }
+      }, {
+        "name": "android.widget.Button",
+        "attr": {
+          "backgroundColor": "#F4F4F4",
+          "width": "wrap",
+          "height": "wrap",
+          "text": "Click Me",
+          "layoutWeight": 1,
+          "click": {
+            "actionType": "1",
+            "args": ["Hello Seal"]
+          }
+        }
+      }]
+    }, {
+      "name": "android.widget.LinearLayout",
+      "attr": {
+        "visibility": "visible",
+        "orientation": "horizontal",
+        "backgroundColor": "#FF0000",
+        "width": "match",
+        "height": "100dp",
+        "paddingLeft": "10dp",
+        "paddingTop": "10dp",
+        "paddingRight": "10dp",
+        "paddingBottom": "10dp"
+      },
+      "children": [{
+        "name": "android.widget.TextView",
+        "attr": {
+          "visibility": "visible",
+          "width": "50dp",
+          "height": "50dp",
+          "backgroundColor": "#FF1493",
+          "text": "我是TextView",
+          "gravity": "center"
+        }
+      }, {
+        "name": "android.widget.Button",
+        "attr": {
+          "backgroundColor": "#F4F4F4",
+          "width": "wrap",
+          "height": "wrap",
+          "text": "Click Me",
+          "layoutWeight": 1,
+          "click": {
+            "actionType": "1",
+            "args": ["Hello Seal"]
+          }
+        }
+      }]
+    }]
+  }]
+}

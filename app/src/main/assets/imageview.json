@@ -1,0 +1,38 @@
+{
+  "name": "android.widget.LinearLayout",
+  "attr": {
+    "orientation": "vertical",
+    "width": "match",
+    "height": "match",
+    "gravity": "center_horizontal"
+
+  },
+  "children": [{
+    "name": "android.widget.ImageView",
+    "attr": {
+      "src": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559650317195&di=442894579f9977ab82aadf1796b02ef1&imgtype=0&src=http%3A%2F%2Fimages.warchina.com%2Fsrc%2F201609%2F4105bc8117.jpg",
+      "scaleType": "centerInside",
+      "width": "150dp",
+      "height": "150dp"
+    }
+
+  }, {
+    "name": "android.widget.ImageView",
+    "attr": {
+      "src": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1560244992&di=eac196c60bcd20176ef13968acbbafdd&imgtype=jpg&er=1&src=http%3A%2F%2Fi1.hdslb.com%2Fbfs%2Farchive%2F3894ddedd7c91e2412c24aa01dc98d22897e45e8.jpg",
+      "scaleType": "centerInside",
+      "width": "150dp",
+      "height": "150dp"
+    }
+
+  }, {
+    "name": "android.widget.ImageView",
+    "attr": {
+      "src": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559651240905&di=7809034e116d9b0be9ca8f3c48b30b9f&imgtype=0&src=http%3A%2F%2Fcartoon.zwbk.org%2FImageUploadTK%2F6346837811022550009116291302.jpg",
+      "scaleType": "centerInside",
+      "width": "wrap",
+      "height": "wrap"
+    }
+
+  }]
+}

@@ -1,0 +1,37 @@
+{
+  "name": "android.widget.LinearLayout",
+  "attr": {
+    "orientation": "vertical",
+    "width": "match",
+    "height": "match",
+    "gravity": "center"
+
+  },
+  "children": [{
+    "name": "android.widget.TextView",
+    "attr": {
+      "width": "match",
+      "height": "100dp",
+      "text": "gravity=center",
+      "backgroundColor": "#CCCCCC",
+      "textColor": "#0099CC",
+      "textSize": "20sp",
+      "gravity": "center"
+
+    }
+  }, {
+    "name": "android.widget.TextView",
+    "attr": {
+      "width": "match",
+      "height": "100dp",
+      "marginTop": "10dp",
+      "paddingRight": "10dp",
+      "text": "gravity=bottom_right,paddingRight =10dp",
+      "backgroundColor": "#FFCCCC",
+      "textColor": "#996699",
+      "textSize": "14sp",
+      "gravity": "bottom_right"
+
+    }
+  }]
+}

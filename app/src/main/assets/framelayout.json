@@ -1,0 +1,62 @@
+{
+  "name": "android.widget.FrameLayout",
+  "attr": {
+    "width": "match",
+    "height": "300dp",
+    "backgroundColor": "#FFCCCC"
+  },
+  "children": [{
+    "name": "android.widget.TextView",
+    "attr": {
+      "visibility": "visible",
+      "width": "100dp",
+      "height": "100dp",
+      "backgroundColor": "#FFCC99",
+      "text": "top_left",
+      "layoutGravity": "top_left"
+    }
+  }, {
+    "name": "android.widget.TextView",
+    "attr": {
+      "visibility": "visible",
+      "width": "100dp",
+      "height": "100dp",
+      "backgroundColor": "#FFCC99",
+      "text": "bottom_left",
+      "gravity": "center",
+      "layoutGravity": "bottom_left"
+    }
+  }, {
+    "name": "android.widget.TextView",
+    "attr": {
+      "visibility": "visible",
+      "width": "100dp",
+      "height": "100dp",
+      "backgroundColor": "#FFCC99",
+      "text": "top_right",
+      "layoutGravity": "top_right"
+    }
+  }, {
+    "name": "android.widget.TextView",
+    "attr": {
+      "visibility": "visible",
+      "width": "100dp",
+      "height": "100dp",
+      "backgroundColor": "#FFCC99",
+      "text": "bottom_right",
+      "gravity": "center",
+      "layoutGravity": "bottom_right"
+    }
+  }, {
+    "name": "android.widget.TextView",
+    "attr": {
+      "visibility": "visible",
+      "width": "100dp",
+      "height": "100dp",
+      "backgroundColor": "#FFCC99",
+      "text": "center",
+      "gravity": "center",
+      "layoutGravity": "center"
+    }
+  }]
+}

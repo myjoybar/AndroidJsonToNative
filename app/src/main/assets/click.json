@@ -1,0 +1,36 @@
+{
+  "name": "android.widget.LinearLayout",
+  "attr": {
+    "orientation": "vertical",
+    "width": "match",
+    "height": "match",
+    "gravity": "center"
+
+  },
+  "children": [{
+    "name": "android.widget.Button",
+    "attr": {
+      "width": "200dp",
+      "height": "50dp",
+      "text": "点击我",
+      "gravity": "center",
+      "click": {
+        "actionType": "1",
+        "args": ["Hello，Seal", "I am remote message"]
+      }
+    }
+  }, {
+    "name": "android.widget.Button",
+    "attr": {
+      "width": "200dp",
+      "height": "50dp",
+      "clickable": false,
+      "text": "clickable:false",
+      "gravity": "center",
+      "click": {
+        "actionType": "2",
+        "args": ["Title", "I am remote message"]
+      }
+    }
+  }]
+}

@@ -1,0 +1,105 @@
+{
+  "name": "android.widget.LinearLayout",
+  "attr": {
+    "orientation": "vertical",
+    "width": "match",
+    "height": "match"
+
+  },
+  "children": [{
+    "name": "android.view.View",
+    "attr": {
+      "width": "match",
+      "height": "50dp",
+      "marginTop": "10dp",
+      "backgroundColor": "#FF9999"
+
+    }
+  }, {
+    "name": "android.view.View",
+    "attr": {
+      "width": "match",
+      "height": "50dp",
+      "marginTop": "10dp",
+      "backgroundColor": "#FFCCCC"
+    }
+  },{
+    "name": "android.widget.LinearLayout",
+    "attr": {
+      "orientation": "horizontal",
+      "backgroundColor": "#EEE8AA",
+      "marginTop": "10dp",
+      "width": "match",
+      "height": "100dp"
+    },
+    "children": [{
+      "name": "android.widget.TextView",
+      "attr": {
+        "width": "wrap",
+        "height": "match",
+        "text": "weight=1",
+        "layoutWeight":1,
+        "gravity": "center",
+        "backgroundColor": "#EEDC82"
+      }
+    }, {
+      "name": "android.widget.TextView",
+      "attr": {
+        "width": "wrap",
+        "height": "match",
+        "text": "weight=1",
+        "layoutWeight": 1,
+        "gravity": "center",
+        "backgroundColor": "#EED2EE"
+      }
+    }, {
+      "name": "android.widget.TextView",
+      "attr": {
+        "width": "wrap",
+        "height": "match",
+        "text": "weight=1",
+        "layoutWeight": 1,
+        "gravity": "center",
+        "backgroundColor": "#FAEBD7"
+      }
+    }]
+  }, {
+    "name": "android.widget.LinearLayout",
+    "attr": {
+      "orientation": "horizontal",
+      "backgroundColor": "#EEE8AA",
+      "width": "match",
+      "height": "100dp",
+      "marginTop": "10dp"
+    },
+    "children": [{
+      "name": "android.widget.TextView",
+      "attr": {
+        "width": "wrap",
+        "height": "match",
+        "text": "wrap1",
+        "gravity": "center",
+        "backgroundColor": "#EEDC82"
+      }
+    }, {
+      "name": "android.widget.TextView",
+      "attr": {
+        "width": "wrap",
+        "height": "match",
+        "text": "wrap2",
+        "gravity": "center",
+        "backgroundColor": "#EED2EE"
+      }
+    }, {
+      "name": "android.widget.TextView",
+      "attr": {
+        "width": "wrap",
+        "height": "match",
+        "text": "weight=1",
+        "layoutWeight": 1,
+        "gravity": "center",
+        "backgroundColor": "#FAEBD7"
+      }
+    }]
+  }]
+}

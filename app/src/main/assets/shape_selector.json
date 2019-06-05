@@ -1,0 +1,114 @@
+{
+  "name": "android.widget.LinearLayout",
+  "attr": {
+    "orientation": "vertical",
+    "width": "match",
+    "height": "match",
+    "gravity": "center"
+
+  },
+  "children": [{
+    "name": "android.widget.TextView",
+    "attr": {
+      "width": "200dp",
+      "height": "50dp",
+      "marginTop": "10dp",
+      "marginBottom": "10dp",
+      "text": "1. Shape rectangle 圆角无渐变有边框",
+      "layoutGravity": "center_horizontal",
+      "gravity": "center",
+      "solidShapeAttr": {
+        "shape": "rectangle",
+        "strokeColor": "#EEC900",
+        "strokeWidth": "1dp",
+        "radius": ["30dp", "30dp", "30dp", "30dp"],
+        "solidColor": "#FAEBD7"
+      }
+    }
+  }, {
+    "name": "android.widget.TextView",
+    "attr": {
+      "width": "60dp",
+      "height": "60dp",
+      "marginTop": "10dp",
+      "marginBottom": "10dp",
+      "text": "2",
+      "layoutGravity": "center_horizontal",
+      "gravity": "center",
+      "solidShapeAttr": {
+        "shape": "oval",
+        "strokeColor": "#EEC900",
+        "strokeWidth": "1dp",
+        "solidColor": "#FAEBD7"
+      }
+    }
+  }, {
+    "name": "android.widget.TextView",
+    "attr": {
+      "width": "200dp",
+      "height": "50dp",
+      "marginTop": "10dp",
+      "marginBottom": "10dp",
+      "text": "3. 渐变Shape",
+      "layoutGravity": "center_horizontal",
+      "gravity": "center",
+      "gradientShapeAttr": {
+        "shape": "rectangle",
+        "strokeColor": "#EEC900",
+        "strokeWidth": "1dp",
+        "radius": ["30dp", "30dp", "30dp", "30dp"],
+        "colors": ["#FFFFCC", "#CCFFFF", "#FFCCCC"],
+        "gradientType": "linear",
+        "orientation": "top_bottom"
+      }
+    }
+  }, {
+    "name": "android.widget.TextView",
+    "attr": {
+      "width": "200dp",
+      "height": "50dp",
+      "marginTop": "10dp",
+      "marginBottom": "10dp",
+      "text": "4. selector 点击我看效果",
+      "layoutGravity": "center_horizontal",
+      "gravity": "center",
+      "click": {
+        "actionType": "1",
+        "args": ["Hello Seal"]
+      },
+      "solidSelectorAttr": {
+        "shape": "rectangle",
+        "strokeColor": "#EEC900",
+        "strokeWidth": "1dp",
+        "radius": ["30dp", "30dp", "30dp", "30dp"],
+        "colorNormal": "#FFCC99",
+        "colorPressed": "#FFCCCC"
+      }
+    }
+  }, {
+    "name": "android.widget.Button",
+    "attr": {
+      "width": "200dp",
+      "height": "50dp",
+      "marginTop": "10dp",
+      "marginBottom": "10dp",
+      "text": "5. selector 渐变 点击我看效果",
+      "layoutGravity": "center_horizontal",
+      "gravity": "center",
+      "click": {
+        "actionType": "1",
+        "args": ["Hello Seal", "I am remote mesage"]
+      },
+      "gradientSelectorAttr": {
+        "shape": "rectangle",
+        "strokeColor": "#EEC900",
+        "strokeWidth": "1dp",
+        "radius": ["30dp", "30dp", "30dp", "30dp"],
+        "colorsNormal": ["#99CCCC", "#FFCC99", "#FFCCCC"],
+        "colorsPressed": ["#FFCCCC", "#FFFF99", "#CCCCFF"],
+        "gradientType": "linear",
+        "orientation": "top_bottom"
+      }
+    }
+  }]
+}

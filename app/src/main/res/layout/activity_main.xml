@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  android:id="@+id/ll_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".MainActivity"
+  android:gravity="center_horizontal"
+  android:orientation="vertical">
+
+  <Button
+    android:id="@+id/btn_click"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Click 事件"
+    android:textAllCaps="false"/>
+
+
+
+  <Button
+    android:id="@+id/btn_shape"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Shape and Selector"
+    android:textAllCaps="false"/>
+
+
+  <Button
+    android:id="@+id/btn_textview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="TextView"
+    android:textAllCaps="false"/>
+
+  <Button
+    android:id="@+id/btn_img"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="ImageView"
+    android:textAllCaps="false"/>
+
+
+  <Button
+    android:id="@+id/btn_fl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="FrameLayout"
+    android:textAllCaps="false"/>
+
+  <Button
+    android:id="@+id/btn_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="LinearLayout"
+    android:textAllCaps="false"/>
+
+  <Button
+    android:id="@+id/btn_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="RelativeLayout"
+    android:textAllCaps="false"/>
+
+
+  <Button
+    android:id="@+id/btn_sv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="ScrollView"
+    android:textAllCaps="false"/>
+
+
+  <Button
+    android:id="@+id/btn_hsv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="HorizontalScrollView"
+    android:textAllCaps="false"/>
+</LinearLayout>

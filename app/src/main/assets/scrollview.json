@@ -1,0 +1,175 @@
+{
+  "name": "android.widget.ScrollView",
+  "attr": {
+    "showScrollbar": "true",
+    "width": "match",
+    "height": "match"
+  },
+  "children": [
+    {
+      "name": "android.widget.LinearLayout",
+      "attr": {
+        "orientation": "vertical",
+        "width": "match",
+        "height": "match"
+
+      },
+      "children": [{
+        "name": "android.widget.TextView",
+        "attr": {
+          "width": "match",
+          "height": "50dp",
+          "text": "Item 1",
+          "backgroundColor": "#CCFFFF",
+          "textColor": "#99CCCC",
+          "textSize": "18sp",
+          "gravity": "center"
+
+        }
+      }, {
+        "name": "android.widget.TextView",
+        "attr": {
+          "width": "match",
+          "height": "50dp",
+          "marginTop": "10dp",
+          "text": "Item 2",
+          "backgroundColor": "#CCFFFF",
+          "textColor": "#99CCCC",
+          "textSize": "18sp",
+          "gravity": "center"
+
+        }
+      }, {
+        "name": "android.widget.TextView",
+        "attr": {
+          "width": "match",
+          "height": "50dp",
+          "marginTop": "10dp",
+          "text": "Item 3",
+          "backgroundColor": "#CCFFFF",
+          "textColor": "#99CCCC",
+          "textSize": "18sp",
+          "gravity": "center"
+
+        }
+      }, {
+        "name": "android.widget.TextView",
+        "attr": {
+          "width": "match",
+          "height": "50dp",
+          "marginTop": "10dp",
+          "text": "Item 4",
+          "backgroundColor": "#CCFFFF",
+          "textColor": "#99CCCC",
+          "textSize": "18sp",
+          "gravity": "center"
+
+        }
+      }, {
+        "name": "android.widget.TextView",
+        "attr": {
+          "width": "match",
+          "height": "50dp",
+          "marginTop": "10dp",
+          "text": "Item 5",
+          "backgroundColor": "#CCFFFF",
+          "textColor": "#99CCCC",
+          "textSize": "18sp",
+          "gravity": "center"
+
+        }
+      }, {
+        "name": "android.widget.TextView",
+        "attr": {
+          "width": "match",
+          "height": "50dp",
+          "marginTop": "10dp",
+          "text": "Item 6",
+          "backgroundColor": "#CCFFFF",
+          "textColor": "#99CCCC",
+          "textSize": "18sp",
+          "gravity": "center"
+
+        }
+      }, {
+        "name": "android.widget.TextView",
+        "attr": {
+          "width": "match",
+          "height": "50dp",
+          "marginTop": "10dp",
+          "text": "Item 7",
+          "backgroundColor": "#CCFFFF",
+          "textColor": "#99CCCC",
+          "textSize": "18sp",
+          "gravity": "center"
+
+        }
+      }, {
+        "name": "android.widget.TextView",
+        "attr": {
+          "width": "match",
+          "height": "50dp",
+          "marginTop": "10dp",
+          "text": "Item 8",
+          "backgroundColor": "#CCFFFF",
+          "textColor": "#99CCCC",
+          "textSize": "18sp",
+          "gravity": "center"
+
+        }
+      }, {
+        "name": "android.widget.TextView",
+        "attr": {
+          "width": "match",
+          "height": "50dp",
+          "marginTop": "10dp",
+          "text": "Item 9",
+          "backgroundColor": "#CCFFFF",
+          "textColor": "#99CCCC",
+          "textSize": "18sp",
+          "gravity": "center"
+
+        }
+      }, {
+        "name": "android.widget.TextView",
+        "attr": {
+          "width": "match",
+          "height": "50dp",
+          "marginTop": "10dp",
+          "text": "Item 10",
+          "backgroundColor": "#CCFFFF",
+          "textColor": "#99CCCC",
+          "textSize": "18sp",
+          "gravity": "center"
+
+        }
+      }, {
+        "name": "android.widget.TextView",
+        "attr": {
+          "width": "match",
+          "height": "50dp",
+          "marginTop": "10dp",
+          "text": "Item 11",
+          "backgroundColor": "#CCFFFF",
+          "textColor": "#99CCCC",
+          "textSize": "18sp",
+          "gravity": "center"
+
+        }
+      }, {
+        "name": "android.widget.TextView",
+        "attr": {
+          "width": "match",
+          "height": "50dp",
+          "marginTop": "10dp",
+          "text": "Item 12",
+          "backgroundColor": "#CCFFFF",
+          "textColor": "#99CCCC",
+          "textSize": "18sp",
+          "gravity": "center"
+
+        }
+      }]
+    }
+  ]
+}

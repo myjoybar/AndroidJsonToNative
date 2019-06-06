@@ -10,10 +10,9 @@ import me.joy.jsontonative.jsontonative.extensionplugin.PluginInjector;
 import me.joy.jsontonative.util.Protocol;
 
 /**
- * @author Joy
- * @description
- * @date 2019/5/27
+ * Created by Joy on 2019/6/6
  */
+
 public class ImageViewTransFormer extends
     BaseViewTransFormer<ImageView, ImageViewAttr> {
 

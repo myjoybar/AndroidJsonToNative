@@ -6,10 +6,9 @@ import android.widget.Button;
 import me.joy.jsontonative.jsontonative.attrs.ButtonViewAttr;
 
 /**
- * @author Joy
- * @description
- * @date 2019/5/27
+ * Created by Joy on 2019/6/6
  */
+
 public class ButtonViewTransFormer<V extends Button, T extends ButtonViewAttr> extends
     TextViewTransFormer<V, T> {
 

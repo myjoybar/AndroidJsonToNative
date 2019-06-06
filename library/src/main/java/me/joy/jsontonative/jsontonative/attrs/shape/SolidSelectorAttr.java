@@ -1,10 +1,9 @@
 package me.joy.jsontonative.jsontonative.attrs.shape;
 
 /**
- * @author Joy
- * @description
- * @date 2019/5/27
+ * Created by Joy on 2019/6/6
  */
+
 public class SolidSelectorAttr extends ShapeAttr {
   private String colorNormal;
   private String colorPressed;

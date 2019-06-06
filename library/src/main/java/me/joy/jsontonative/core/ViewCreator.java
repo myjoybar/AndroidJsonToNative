@@ -36,18 +36,15 @@ import me.joy.jsontonative.util.Protocol;
 
 
 /**
- * @author Joy
- * @description
- * @date 2019/6/4
+ * Created by Joy on 2019/6/6
  */
+
 public class ViewCreator {
 
   private static String TAG = "ViewParseHelper";
 
   public static void recursiveViewNode(Context context, View parent, ViewNode viewNode) {
     if (null != viewNode) {
-      Log.d(TAG, "viewNode name = " + viewNode.getName());
-      Log.d(TAG, "viewNode getAttr = " + viewNode.getAttr());
       View view = createView(context, parent, viewNode);
       List<ViewNode> children = viewNode.getChildren();
       int size;

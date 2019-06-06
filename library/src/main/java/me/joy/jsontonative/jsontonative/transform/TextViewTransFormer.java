@@ -10,10 +10,9 @@ import me.joy.jsontonative.util.Protocol;
 import me.joy.jsontonative.util.Utils;
 
 /**
- * @author Joy
- * @description
- * @date 2019/5/27
+ * Created by Joy on 2019/6/6
  */
+
 public class TextViewTransFormer<V extends TextView, T extends TextViewAttr> extends
     BaseViewTransFormer<V, T> {
 

@@ -4,10 +4,9 @@ import android.view.View;
 import android.widget.ImageView;
 
 /**
- * @author Joy
- * @description
- * @date 2019/6/4
+ * Created by Joy on 2019/6/6
  */
+
 public interface IPlugin {
 
   void onViewClick(String type, String[] args);

@@ -5,10 +5,9 @@ import java.util.List;
 import me.joy.jsontonative.jsontonative.attrs.BaseViewAttr;
 
 /**
- * @author Joy
- * @description
- * @date 2019/5/24
+ * Created by Joy on 2019/6/6
  */
+
 public class ViewNode {
 
   private String name;

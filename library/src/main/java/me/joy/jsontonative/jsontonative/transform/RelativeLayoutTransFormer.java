@@ -6,10 +6,9 @@ import android.widget.RelativeLayout;
 import me.joy.jsontonative.jsontonative.attrs.RelativeLayoutAttr;
 
 /**
- * @author Joy
- * @description
- * @date 2019/5/27
+ * Created by Joy on 2019/6/6
  */
+
 public class RelativeLayoutTransFormer extends
     BaseViewTransFormer<RelativeLayout, RelativeLayoutAttr> {
 

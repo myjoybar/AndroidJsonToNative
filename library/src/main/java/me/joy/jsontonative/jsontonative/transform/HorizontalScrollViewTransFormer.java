@@ -7,10 +7,9 @@ import android.widget.HorizontalScrollView;
 import me.joy.jsontonative.jsontonative.attrs.HorizontalScrollViewAttr;
 
 /**
- * @author Joy
- * @description
- * @date 2019/5/27
+ * Created by Joy on 2019/6/6
  */
+
 public class HorizontalScrollViewTransFormer extends
     BaseViewTransFormer<HorizontalScrollView, HorizontalScrollViewAttr> {
 
@@ -26,7 +25,6 @@ public class HorizontalScrollViewTransFormer extends
   }
 
   public void setShowScrollbar() {
-    Log.d("BaseViewTransFormer", "viewAttr.isShowScrollbar() = "+viewAttr.isShowScrollbar());
     self.setHorizontalScrollBarEnabled(viewAttr.isShowScrollbar());
   }
 

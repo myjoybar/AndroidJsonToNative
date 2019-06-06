@@ -6,10 +6,9 @@ import android.widget.ScrollView;
 import me.joy.jsontonative.jsontonative.attrs.ScrollViewAttr;
 
 /**
- * @author Joy
- * @description
- * @date 2019/5/27
+ * Created by Joy on 2019/6/6
  */
+
 public class ScrollViewTransFormer extends
     BaseViewTransFormer<ScrollView, ScrollViewAttr> {
 

@@ -1,10 +1,9 @@
 package me.joy.jsontonative.jsontonative.attrs.shape;
 
 /**
- * @author Joy
- * @description
- * @date 2019/5/27
+ * Created by Joy on 2019/6/6
  */
+
 public class ShapeAttr {
 
   private String shape; //RECTANGLE = 0; OVAL = 1; LINE = 2; RING = 3;

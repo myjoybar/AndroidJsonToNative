@@ -4,7 +4,6 @@ import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.GradientDrawable;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.View.OnLongClickListener;
@@ -31,10 +30,9 @@ import me.joy.jsontonative.util.ViewIDUtils;
 
 
 /**
- * @author Joy
- * @description
- * @date 2019/5/27
+ * Created by Joy on 2019/6/6
  */
+
 public  class BaseViewTransFormer<V extends View, T extends BaseViewAttr> {
 
   private static String TAG = "BaseViewTransFormer";
@@ -155,11 +153,8 @@ public  class BaseViewTransFormer<V extends View, T extends BaseViewAttr> {
     if (((width = Utils.convertUnitToPx(context, viewAttr.getWidth(), -3))) != -3) {
       LayoutParams layoutParams = self.getLayoutParams();
       if (null != layoutParams) {
-        Log.d(TAG, "setWidth null!=layoutParams，width = " + width);
         layoutParams.width = width;
         self.setLayoutParams(layoutParams);
-      } else {
-        Log.d(TAG, "setWidth null==layoutParams");
       }
 
     }

@@ -18,10 +18,9 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+
 /**
- * @author Joy
- * @description
- * @date 2019/6/4
+ * Created by Joy on 2019/6/6
  */
 public class ViewNodeHelper {
 

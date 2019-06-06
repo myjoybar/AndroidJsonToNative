@@ -1,10 +1,9 @@
 package me.joy.jsontonative.jsontonative.extensionplugin;
 
 /**
- * @author Joy
- * @description
- * @date 2019/6/4
+ * Created by Joy on 2019/6/6
  */
+
 public class PluginInjector {
 
   private IPlugin mPlugin;

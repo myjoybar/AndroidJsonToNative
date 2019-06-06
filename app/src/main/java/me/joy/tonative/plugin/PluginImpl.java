@@ -16,10 +16,9 @@ import me.joy.jsontonative.jsontonative.extensionplugin.IPlugin;
 import me.joy.tonative.R;
 
 /**
- * @author Joy
- * @description
- * @date 2019/6/4
+ * Created by Joy on 2019/6/6
  */
+
 public class PluginImpl implements IPlugin {
 
   private Context context;

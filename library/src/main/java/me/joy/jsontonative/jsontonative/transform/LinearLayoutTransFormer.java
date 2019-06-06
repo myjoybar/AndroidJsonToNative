@@ -8,10 +8,9 @@ import me.joy.jsontonative.jsontonative.attrs.LinearLayoutAttr;
 import me.joy.jsontonative.util.Protocol;
 
 /**
- * @author Joy
- * @description
- * @date 2019/5/27
+ * Created by Joy on 2019/6/6
  */
+
 public class LinearLayoutTransFormer extends
     BaseViewTransFormer<LinearLayout, LinearLayoutAttr> {
 

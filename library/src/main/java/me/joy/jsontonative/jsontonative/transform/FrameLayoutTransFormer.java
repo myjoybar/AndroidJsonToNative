@@ -6,10 +6,9 @@ import android.widget.FrameLayout;
 import me.joy.jsontonative.jsontonative.attrs.FrameLayoutAttr;
 
 /**
- * @author Joy
- * @description
- * @date 2019/5/27
+ * Created by Joy on 2019/6/6
  */
+
 public class FrameLayoutTransFormer extends
     BaseViewTransFormer<FrameLayout, FrameLayoutAttr> {
 

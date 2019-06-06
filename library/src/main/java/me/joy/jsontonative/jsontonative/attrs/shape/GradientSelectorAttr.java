@@ -1,10 +1,9 @@
 package me.joy.jsontonative.jsontonative.attrs.shape;
 
 /**
- * @author Joy
- * @description
- * @date 2019/5/27
+ * Created by Joy on 2019/6/6
  */
+
 public class GradientSelectorAttr extends ShapeAttr {
 
   private String colorsNormal[]; //{ 0xff255779 , 0xff3e7492, 0xffa6c0cd };

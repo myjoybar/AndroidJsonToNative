@@ -1,10 +1,9 @@
 package me.joy.jsontonative.jsontonative.attrs;
 
 /**
- * @author Joy
- * @description
- * @date 2019/5/27
+ * Created by Joy on 2019/6/6
  */
+
 public class ImageViewAttr extends BaseViewAttr {
 
   private String src;

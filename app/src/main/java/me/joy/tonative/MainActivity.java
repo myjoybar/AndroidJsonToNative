@@ -4,6 +4,9 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.ImageView;
+import me.joy.jsontonative.util.ViewIDUtils;
 
 public class MainActivity extends AppCompatActivity implements OnClickListener {
 
@@ -22,6 +25,10 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
     findViewById(R.id.btn_rl).setOnClickListener(this);
     findViewById(R.id.btn_sv).setOnClickListener(this);
     findViewById(R.id.btn_hsv).setOnClickListener(this);
+    ImageView ImageView =    findViewById(R.id.imv);
+    ImageView.setBackgroundResource(ViewIDUtils.getMipmapImgResID(this,"ic_launcher"));
+    Button button =  findViewById(R.id.btn_hsv);
+    button.setText(ViewIDUtils.getStringResID(this,"app_name"));
 
   }
 

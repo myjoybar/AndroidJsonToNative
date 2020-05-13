@@ -1,7 +1,6 @@
 package me.joy.jsontonative.core;
 
 import android.content.Context;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -42,8 +41,23 @@ import me.joy.jsontonative.util.Protocol;
 public class ViewCreator {
 
   private static String TAG = "ViewParseHelper";
+  private Context context;
 
-  public static void recursiveViewNode(Context context, View parent, ViewNode viewNode) {
+  private static class ViewCreatorHolder {
+
+    private static final ViewCreator INSTANCE = new ViewCreator();
+  }
+
+  public static final ViewCreator getInstance() {
+    return ViewCreatorHolder.INSTANCE;
+  }
+
+  public void init(Context context) {
+    this.context = context.getApplicationContext();
+  }
+
+
+  public void recursiveViewNode(Context context, View parent, ViewNode viewNode) {
     if (null != viewNode) {
       View view = createView(context, parent, viewNode);
       List<ViewNode> children = viewNode.getChildren();
@@ -54,14 +68,10 @@ public class ViewCreator {
         }
       }
     }
-
   }
 
 
-  public static View createView(Context context, View parent, ViewNode viewNode) {
-//    if (null == parent) {
-//      throw new IllegalArgumentException("this ViewNode parent can not be null");
-//    }
+  private View createView(Context context, View parent, ViewNode viewNode) {
     String name = viewNode.getName();
     View view;
     switch (name) {
@@ -69,9 +79,9 @@ public class ViewCreator {
       case Protocol.VIEW_TYPE_VIEW:
         view = new View(context);
         ((ViewGroup) parent).addView(view);
-        BaseViewAttr baseViewAttr =  viewNode.getAttr();
+        BaseViewAttr baseViewAttr = viewNode.getAttr();
         BaseViewTransFormer baseViewTransFormer = new BaseViewTransFormer(context,
-             view, (ViewGroup) parent,
+            view, (ViewGroup) parent,
             baseViewAttr);
         baseViewTransFormer.transForm();
 
@@ -80,7 +90,7 @@ public class ViewCreator {
       case Protocol.VIEW_TYPE_VIEWGROUP:
         view = new View(context);
         ((ViewGroup) parent).addView(view);
-        BaseViewAttr baseViewGroupAttr =  viewNode.getAttr();
+        BaseViewAttr baseViewGroupAttr = viewNode.getAttr();
         BaseViewTransFormer baseViewGroupTransFormer = new BaseViewTransFormer(context,
             view, (ViewGroup) parent,
             baseViewGroupAttr);

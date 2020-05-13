@@ -78,4 +78,9 @@
     android:layout_height="wrap_content"
     android:text="HorizontalScrollView"
     android:textAllCaps="false"/>
+
+   <ImageView
+     android:id="@+id/imv"
+     android:layout_width="40dp"
+     android:layout_height="40dp"/>
 </LinearLayout>

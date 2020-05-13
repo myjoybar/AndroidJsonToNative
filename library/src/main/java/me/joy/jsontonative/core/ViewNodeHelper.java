@@ -24,71 +24,74 @@ import org.json.JSONObject;
  */
 public class ViewNodeHelper {
 
+  private static final String TAG_NAME = "name";
+  private static final String TAG_ATTR = "attr";
+  private static final String TAG_CHILDREN = "children";
 
   public static ViewNode parse(String json) {
     ViewNode viewNode = new ViewNode();
     try {
       JSONObject jsonObject = new JSONObject(json);
 
-      if (jsonObject.has("name")) {
-        String name = jsonObject.optString("name");
+      if (jsonObject.has(TAG_NAME)) {
+        String name = jsonObject.optString(TAG_NAME);
         viewNode.setName(name);
-        if (jsonObject.has("attr")) {
+        if (jsonObject.has(TAG_ATTR)) {
 
           switch (name) {
             case Protocol.VIEW_TYPE_VIEW:
               BaseViewAttr baseViewAttr = GsonUtil
-                  .parseJsonStrToBean(jsonObject.optString("attr"), BaseViewAttr.class);
+                  .parseJsonStrToBean(jsonObject.optString(TAG_ATTR), BaseViewAttr.class);
               viewNode.setAttr(baseViewAttr);
               break;
             case Protocol.VIEW_TYPE_VIEWGROUP:
               BaseViewAttr baseViewGroupAttr = GsonUtil
-                  .parseJsonStrToBean(jsonObject.optString("attr"), BaseViewAttr.class);
+                  .parseJsonStrToBean(jsonObject.optString(TAG_ATTR), BaseViewAttr.class);
               viewNode.setAttr(baseViewGroupAttr);
               break;
             case Protocol.VIEW_TYPE_FRAMELAYOUT:
               FrameLayoutAttr frameLayoutAttr = GsonUtil
-                  .parseJsonStrToBean(jsonObject.optString("attr"), FrameLayoutAttr.class);
+                  .parseJsonStrToBean(jsonObject.optString(TAG_ATTR), FrameLayoutAttr.class);
               viewNode.setAttr(frameLayoutAttr);
               break;
             case Protocol.VIEW_TYPE_LINEARLAYOUT:
 
               LinearLayoutAttr linearLayoutAttr = GsonUtil
-                  .parseJsonStrToBean(jsonObject.optString("attr"), LinearLayoutAttr.class);
+                  .parseJsonStrToBean(jsonObject.optString(TAG_ATTR), LinearLayoutAttr.class);
               viewNode.setAttr(linearLayoutAttr);
               break;
 
             case Protocol.VIEW_TYPE_RELATIVELAYOUT:
 
               RelativeLayoutAttr relativeLayoutAttr = GsonUtil
-                  .parseJsonStrToBean(jsonObject.optString("attr"), RelativeLayoutAttr.class);
+                  .parseJsonStrToBean(jsonObject.optString(TAG_ATTR), RelativeLayoutAttr.class);
               viewNode.setAttr(relativeLayoutAttr);
               break;
 
             case Protocol.VIEW_TYPE_SCROLLVIEW:
               ScrollViewAttr scrollViewAttr = GsonUtil
-                  .parseJsonStrToBean(jsonObject.optString("attr"), ScrollViewAttr.class);
+                  .parseJsonStrToBean(jsonObject.optString(TAG_ATTR), ScrollViewAttr.class);
               viewNode.setAttr(scrollViewAttr);
               break;
             case Protocol.VIEW_TYPE_HORIZONTALSCROLLVIEW:
               HorizontalScrollViewAttr horizontalScrollViewAttr = GsonUtil
-                  .parseJsonStrToBean(jsonObject.optString("attr"), HorizontalScrollViewAttr.class);
+                  .parseJsonStrToBean(jsonObject.optString(TAG_ATTR), HorizontalScrollViewAttr.class);
               viewNode.setAttr(horizontalScrollViewAttr);
               break;
             case Protocol.VIEW_TYPE_TEXT_VIEW:
               TextViewAttr textViewAttr = GsonUtil
-                  .parseJsonStrToBean(jsonObject.optString("attr"), TextViewAttr.class);
+                  .parseJsonStrToBean(jsonObject.optString(TAG_ATTR), TextViewAttr.class);
               viewNode.setAttr(textViewAttr);
               break;
             case Protocol.VIEW_TYPE_BUTTON:
               ButtonViewAttr buttonViewAttr = GsonUtil
-                  .parseJsonStrToBean(jsonObject.optString("attr"), ButtonViewAttr.class);
+                  .parseJsonStrToBean(jsonObject.optString(TAG_ATTR), ButtonViewAttr.class);
               viewNode.setAttr(buttonViewAttr);
               break;
 
             case Protocol.VIEW_TYPE_IMAGEVIEW:
               ImageViewAttr imageViewAttr = GsonUtil
-                  .parseJsonStrToBean(jsonObject.optString("attr"), ImageViewAttr.class);
+                  .parseJsonStrToBean(jsonObject.optString(TAG_ATTR), ImageViewAttr.class);
               viewNode.setAttr(imageViewAttr);
               break;
             default:
@@ -97,9 +100,9 @@ public class ViewNodeHelper {
         }
       }
 
-      if (jsonObject.has("children")) {
+      if (jsonObject.has(TAG_CHILDREN)) {
         List<ViewNode> list = new ArrayList<>();
-        String children = jsonObject.optString("children");
+        String children = jsonObject.optString(TAG_CHILDREN);
         JSONArray jsonArray = new JSONArray(children);
         int length = jsonArray.length();
         for (int i = 0; i < length; i++) {

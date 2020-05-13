@@ -100,7 +100,9 @@ public class DrawableCreator {
 
       }
 
-      gradientDrawable.setStroke(strokeWidth, Color.parseColor(strokeColor));
+      if (!TextUtils.isEmpty(strokeColor)) {
+        gradientDrawable.setStroke(strokeWidth, Color.parseColor(strokeColor));
+      }
       return gradientDrawable;
     }
 

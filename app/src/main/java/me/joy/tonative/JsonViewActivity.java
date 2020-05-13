@@ -29,6 +29,7 @@ public class JsonViewActivity extends AppCompatActivity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     // setContentView(R.layout.activity_main);
+    ViewCreator.getInstance().init(this);
     jsonFileName = getIntent().getStringExtra("jsonFileName");
     final View rootView = findViewById(android.R.id.content);
     PluginInjector.getInstance().register(new PluginImpl(this));
@@ -38,7 +39,7 @@ public class JsonViewActivity extends AppCompatActivity {
 
   private void start(Context context, View parent, String json) {
     ViewNode viewNode = ViewNodeHelper.parse(json);
-    ViewCreator.recursiveViewNode(context, parent, viewNode);
+    ViewCreator.getInstance().recursiveViewNode(context, parent, viewNode);
 
   }
 
